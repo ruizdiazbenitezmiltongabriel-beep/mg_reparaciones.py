@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MG Reparaciones - Servicios</title>
+    <meta name="description" content="Servicios de reparación de hardware, software y especiales en Liberación. Atención rápida y confiable.">
+    <meta name="theme-color" content="#ffcc00">
+    <link rel="icon" type="image/png" href="gemini.png">
+    <link rel="canonical" href="servicios.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MG Reparaciones - Servicios">
+    <meta property="og:description" content="Reparación de pantallas y baterías, desbloqueo, flasheo, activación de Office y más.">
+    <meta property="og:image" content="gemini.png">
+    <meta property="og:locale" content="es_ES">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MG Reparaciones - Servicios">
+    <meta name="twitter:description" content="Servicios técnicos completos: hardware, software y especiales.">
+    <meta name="twitter:image" content="gemini.png">
+    <!-- Fondo de pantalla completa -->
+    <style>
+        body {
+            background-image: url('cmd.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            width: 100vw;
+        }
+    </style>
+
+    <!-- Estilos integrados -->
+    <style>
+        body { background-color: #1a1a1a; font-family: 'Inter', sans-serif; min-height: 100vh; }
+        .service-item { transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; border-radius: 0.5rem; }
+        .service-item:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(255, 204, 0, 0.3); }
+        .call-to-action { transition: background-color 0.3s, transform 0.3s; }
+        .call-to-action:active { transform: scale(0.98); }
+        img { user-select: none; pointer-events: none; }
+        .titulo-principal { border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 5px; }
+    </style>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'mg-dark': '#1a1a1a',
+                        'mg-gold': '#ffcc00',
+                        'mg-green': '#10b981',
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-white">
+    <!-- Barra de navegación -->
+    <nav class="w-full bg-mg-dark/90 backdrop-blur border-b border-mg-gold/40 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="unnamed.jpg" alt="Logo MG Reparaciones" class="w-8 h-8 rounded-full object-cover border-2 border-mg-gold shadow" loading="eager">
+                <span class="text-2xl font-extrabold text-mg-gold tracking-wider">MG</span>
+                <span class="text-sm text-gray-300 hidden sm:block">Reparaciones</span>
+            </a>
+            <div class="flex items-center gap-5 text-sm">
+                <a href="index.html">Inicio</a>
+                <a class="text-mg-gold" href="servicios.html" aria-current="page">Servicios</a>
+                <a href="precios.html">Precios</a>
+                <a href="articulos.html">Artículos</a>
+                <a href="https://wa.me/5950971712958?text=Hola%2C%20quisiera%20informaci%C3%B3n" target="_blank" rel="noopener">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Botón flotante para volver al inicio -->
+    <a href="index.html" class="fixed bottom-6 right-6 bg-mg-gold hover:bg-yellow-400 text-black font-bold py-3 px-4 rounded-full shadow-lg">Volver al Inicio ⮌</a>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="min-h-screen flex flex-col items-center p-4">
+        <!-- ENCABEZADO Y TÍTULO -->
+        <header class="w-full text-center py-8 md:py-12 bg-mg-dark border-b border-mg-gold/50 shadow-lg">
+            <!-- ICONO/LOGO CIRCULAR -->
+            <img src="-47a54118-0d60-4617-8d2e-8458b6990cf1" 
+                 alt="Icono/Logo Dorado de MG Reparaciones" 
+                 class="w-24 h-24 mx-auto mb-4 rounded-full shadow-2xl border-4 border-mg-gold/70 object-cover"
+                 onerror="this.style.display='none'">
+
+            <!-- IMAGEN DE LOGO/BANNER (El texto original del anuncio) -->
+            <img src="uploaded:IMG-20250925-WA0074.jpg-43c46eae-7f13-43cf-9192-adeb730f334b" 
+                 alt="MG Reparaciones - Servicio Técnico en General" 
+                 class="w-full max-w-xs mx-auto h-auto rounded-lg shadow-xl"
+                 onerror="this.style.display='none'">
+
+            <!-- TÍTULO PRINCIPAL -->
+            <h1 class="text-4xl md:text-6xl font-extrabold text-mg-gold tracking-wider uppercase mt-4 titulo-principal">
+                MG REPARACIONES
+            </h1>
+            <p class="text-lg md:text-xl mt-2 text-gray-300">
+                Tu Solución Experta en Servicio Técnico
+            </p>
+        </header>
+
+        <!-- SECCIÓN DE CONTACTO RÁPIDO (Botón de Llamada) -->
+        <section class="w-full max-w-2xl mt-8 z-10 bg-mg-dark/95 backdrop-blur-sm p-4 rounded-xl shadow-2xl border-2 border-mg-gold/70">
+            <h2 class="text-2xl font-bold text-center text-mg-gold mb-4">¡Servicio Rápido! Llámanos Ahora</h2>
+            <a href="https://wa.me/5950971712958?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20reparaci%C3%B3n%20de%20m%C3%B3viles." target="_blank" rel="noopener noreferrer" class="underline">
+                Pregúntanos por WhatsApp 📱
+            </a>
+            <a href="tel:+595971712958" 
+               class="call-to-action w-full block bg-mg-green hover:bg-green-600 text-white font-black py-4 rounded-lg text-2xl text-center shadow-lg transform transition duration-300 hover:scale-[1.02]">
+                📲 0971 712 958
+            </a>
+        </section>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="w-full max-w-2xl mt-8 p-6 bg-white/5 rounded-xl shadow-xl">
+            <!-- SECCIÓN DE SERVICIOS -->
+            <section class="servicios mb-10">
+                <h2 class="text-3xl font-bold text-mg-gold mb-6 border-b pb-2 border-mg-gold/30">Servicios Técnicos</h2>
+                <div class="space-y-6">
+                    <!-- Hardware y Baterías -->
+                    <div class="service-item p-6 bg-mg-dark rounded-lg shadow-md border-l-4 border-mg-gold">
+                        <h3 class="text-xl font-semibold text-mg-gold flex items-center mb-3">
+                            <svg class="w-6 h-6 mr-2 text-red-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zM6.5 9a.5.5 0 01.5-.5h6a.5.5 0 010 1H7a.5.5 0 01-.5-.5z" clip-rule="evenodd"></path></svg>
+                            Reparación de Hardware
+                        </h3>
+                        <img src="OIP.jpg" alt="Imagen de móvil con pantalla dañada" class="w-full h-auto object-cover rounded-md mb-4" onerror="this.style.display='none'" loading="lazy">
+                        <ul class="list-disc list-inside mt-2 ml-4 text-gray-300">
+                            <li>Cambio de Pantalla y Batería </li>
+                        </ul>
+                    </div>
+
+                    <!-- Software y Desbloqueo (Placeholder) -->
+                    <div class="service-item p-6 bg-mg-dark rounded-lg shadow-md border-l-4 border-mg-gold">
+                        <h3 class="text-xl font-semibold text-mg-gold flex items-center mb-3">
+                            <svg class="w-6 h-6 mr-2 text-blue-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM8 8a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1zm1 4a1 1 0 100 2h2a1 1 0 100-2H9z"></path></svg>
+                            Software y Liberación
+                        </h3>
+                        <img src="retrato.jpg" alt="Ilustración de software y liberación" class="w-full h-auto object-cover rounded-md mb-4" onerror="this.style.display='none'" loading="lazy">
+                        <ul class="list-disc list-inside mt-2 ml-4 text-gray-300">
+                            <li>Desbloqueo y Flasheo de Dispositivos</li>
+                            <li>Activación y Liberación </li>
+                            <li>Trabajos en Partes Software (Solución de errores y optimización)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Servicios Especiales -->
+                    <div class="service-item p-6 bg-mg-dark rounded-lg shadow-md border-l-4 border-mg-gold">
+                        <h3 class="text-xl font-semibold text-mg-gold flex items-center mb-3">
+                            <svg class="w-6 h-6 mr-2 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>
+                            Servicios Especiales
+                        </h3>
+                        <ul class="list-disc list-inside mt-2 ml-4 text-gray-300">
+                            <li>Activación de Cuentas Office (Licencias y configuración)</li>
+                            <img src="Office-activado.jpeg" alt="Office activado" class="w-full h-auto object-cover rounded-md my-3" width="50%" onerror="this.style.display='none'" loading="lazy">
+                            <li class="font-bold text-mg-gold">¡Carga de Juegos PS2 y PS3! (Servicio retro único)</li>
+                            <img src="ps2.jpg" alt="Juegos PS2" class="w-full h-auto object-cover rounded-md my-3" width="50%" onerror="this.style.display='none'" loading="lazy">
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN DE UBICACIÓN Y HORARIOS -->
+            <section class="ubicacion pt-6 border-t border-mg-gold/30">
+                <h2 class="text-3xl font-bold text-mg-gold mb-6">Ubicación y Horarios</h2>
+                <div class="bg-mg-dark/80 p-6 rounded-lg shadow-inner space-y-4">
+                    <!-- Dirección -->
+                    <div>
+                        <p class="text-xl font-bold text-mg-gold mb-2">📍 Dirección:</p>
+                        <p class="text-gray-200">Liberación, frente a OLMI Construcciones.</p>
+                        <!-- Enlace actualizado a Google Maps con pin rojo -->
+                        <a href="https://maps.app.goo.gl/JKevQwkvdu6jAnmR9" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm text-mg-green hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="#ef4444"><path d="M12 2C8.686 2 6 4.686 6 8c0 4.477 6 12 6 12s6-7.523 6-12c0-3.314-2.686-6-6-6zm0 8.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
+                            Abrir en Google Maps
+                        </a>
+                    </div>
+
+                    <!-- Horario -->
+                    <div>
+                        <p class="text-xl font-bold text-mg-gold mb-2">⏰ Horario de Atención:</p>
+                        <p class="text-gray-200 font-semibold">De lunes a viernes:</p>
+                        <p class="text-2xl font-extrabold text-mg-gold">8:00 AM - 14:00 PM</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- PIE DE PÁGINA -->
+        <footer class="w-full text-center mt-12 py-4 border-t border-mg-gold/50 text-blue-400">
+            <p>&copy; 2025  MG Reparaciones. Todos los derechos reservados.</p>
+            <p>Servicio Técnico de Calidad y Confianza.</p>
+        </footer>
+    </div>
+</body>
+</html>

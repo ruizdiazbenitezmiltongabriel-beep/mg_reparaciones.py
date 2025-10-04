@@ -1,0 +1,77 @@
+/* -------------------------------------------------------------------
+   MG REPARACIONES: Estilos Personalizados
+   ------------------------------------------------------------------- */
+
+/* Establece la fuente principal y asegura que el body ocupe toda la pantalla */
+body {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+}
+
+/* -------------------------------------------------------------------
+   Animaciones
+   ------------------------------------------------------------------- */
+
+/* Animación sencilla para los elementos de servicio al pasar el ratón */
+.service-item {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 0.5rem; /* Heredado de Tailwind rounded-lg */
+}
+
+.service-item:hover {
+    /* Efecto de levantamiento y brillo dorado */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(255, 204, 0, 0.3);
+}
+
+/* Efecto para el botón de llamada en el móvil */
+.call-to-action {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.call-to-action:active {
+    /* Pequeño hundimiento al tocarlo en el móvil */
+    transform: scale(0.98); 
+}
+
+/* -------------------------------------------------------------------
+   Ajustes Específicos para Imágenes y Títulos
+   ------------------------------------------------------------------- */
+
+/* Asegura que las imágenes no sean arrastrables para una sensación más de aplicación */
+img {
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Estilo para la línea divisoria del título principal */
+.titulo-principal {
+    border-bottom: 3px solid #ffcc00; /* Dorado */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.area-a-modificar {
+    /* 1. Define la URL de tu imagen de fondo */
+    background-image: url('OIP.jpg'); 
+    
+    /* 2. Controla cómo se ajusta la imagen al tamaño del div */
+    /* - cover: La imagen cubre todo el contenedor (pueden cortarse los bordes).
+       - contain: La imagen se muestra entera (puede dejar espacios vacíos). 
+    */
+    background-size: cover; 
+    
+    /* 3. Evita que la imagen se repita si no cubre toda el área */
+    background-repeat: no-repeat;
+    
+    /* 4. Centra la imagen dentro del contenedor */
+    background-position: center center;
+    
+    /* 5. (Importante) Asegúrate de que el div tenga un tamaño visible */
+    /* Si el div está vacío, necesitará una altura y ancho definidos. */
+    width: 100%; /* Ejemplo de ancho */
+    height: 1000px; /* Ejemplo de altura para que la imagen se vea */
+    
+    /* Nota: Si este div ya tenía un color o imagen de fondo, 
+             este nuevo código lo **reemplazará** automáticamente. */
+}
